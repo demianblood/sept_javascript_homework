@@ -75,15 +75,15 @@
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 // let a = [];
 // for (i = 0; i < 10; i++) {
-//     if (i % 2) {
+//     if (i % 2 === 0) {
 //         a[i] = ''
-//     } else if (i % 3) {
+//     } else if (i % 3 === 0) {
 //         a[i] = 1
 //     } else {
 //         a[i] = true
 //     }
-//     console.log(a)
 // }
+// console.log(a)
 // for (i=0;i<10; i++){
 //     console.log(i)
 //     document.write(i)
@@ -104,7 +104,7 @@
 //
 // }
 // for (i = 0; i < 100; i++) {
-//     if (i % 2) {
+//     if (i % 2 !== 0) {
 //         console.log(i)
 //         document.write(i)
 //     }
