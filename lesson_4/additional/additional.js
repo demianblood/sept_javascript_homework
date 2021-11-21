@@ -22,16 +22,32 @@
 // - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
-function key(arg1) {
-    let obj = [];
-    for (let i = 0; i < arg1.length; i++) {
-        obj = Object.keys(arg1[i]);
-        console.log(obj)
-    }
-}
-key([{name: 'Dima', age: 13}, {model: 'Camry'}])
-//????????????????????????????????????як правильно об'єднати?
+// function sumKey(arg1) {
+//     let obj = [];
+//     for (let arg1Element of arg1) {
+//         for (let key in arg1Element) {
+//             obj.push(key)
+//         }
+//     }
+//     console.log(obj)
+//     return obj
+// }
+// sumKey([{name: 'Dima', age: 13}, {model: 'Camry'}])
+
 
 //     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 // EXAMPLE:
-//     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+//  [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+// let users = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+//
+// function sumValue(arg) {
+//     let obj = [];
+//     for (let argElement of arg) {
+//         for (let key in argElement) {
+//             obj.push(argElement[key])
+//         }
+//     }
+//     return obj
+// }
+//
+// console.log(sumValue(users))
