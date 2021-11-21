@@ -26,13 +26,55 @@
 // function numbers(massif) {
 //     return Math.max(...massif)
 // }
-// numbers([3,4,5,62,5664,23334,443])
+// console.log(numbers([3, 4, 5, 62, 5664, 23334, 443]))
+// function maxNumbers(massif) {
+//     for (let i = 0; i < massif.length; i++) {
+//         let numb = massif[i]
+//         let numbPlus = massif[i++]
+//         let numbMinus = massif[i--]
+//         console.log(numbMinus, numb, numbPlus)
+//     }
+//
+// }
+//
+// maxNumbers([3, 4, 5, 62, 5664, 23334, 443])
+// let massif = [3, 44354, 5, 62, 5664, 23334, 443];
+//
+// function maxNumbers(massif) {
+//     let maxValue = 0
+//     for (let i = 0; i < massif.length; i++) {
+//         if (massif[i] > maxValue) {
+//             maxValue = massif[i]
+//         } else {
+//             console.log(`${massif[i]} не найбільше`)
+//         }
+//     }
+//     console.log(maxValue)
+// }
+// maxNumbers(massif)
 
 // - створити функцію яка повертає найменьше число з масиву
 // function numbers(massif) {
 //     return Math.min(...massif)
 // }
 // numbers([3,4,5,62,5664,23334,443])
+// let massif = [3, 44354, 5, 62, 5664, 23334, 443];
+//
+// function minNumbers(massif) {
+//     let minValue = 0;
+//     for (let i = 0; i < massif.length; i++) {
+//         if (minValue === 0) {
+//             minValue = massif[i]
+//         } else if (massif[i] < minValue) {
+//             minValue = massif[i]
+//         } else {
+//             console.log(`${massif[i]} не найменше`)
+//         }
+//     }
+//     console.log(minValue)
+// }
+//
+// minNumbers(massif)
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 // function sum(numbers) {
@@ -59,27 +101,17 @@
 //     let max = 0;
 //     let min = 0;
 //     for (let i = 0; i < number.length - 1; i++) {
-//         if (number[i] > number[i + 1]) {
-//             max = number[i];
-//             min = number[i + 1]
-//         } else if (number[i] < number[i + 1]) {
-//             max = number[i + 1];
+//         if (min === 0 || number[i] < min) {
 //             min = number[i]
+//         }
+//         if (number[i] > max){
+//             max = number[i]
 //         }
 //     }
 //     console.log(max)
-//     for (let i = number.length - 1; i > 0; i--) {
-//         if (number[i] > number[i - 1]) {
-//             max = number[i];
-//             min = number[i - 1]
-//         } else if (number[i] < number[i - 1]) {
-//             max = number[i - 1];
-//             min = number[i]
-//         }
-//     }
 //     return min
 // }
-// numbers([3, 4, 5, 62, 5664, 23334, 443])
+// numbers([31231, 4, 535432, 62, 5664, 23334, 443])
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
@@ -110,5 +142,16 @@
 //     console.log(massif2)
 //     return massif2
 // }
-//
 // reverse([3, 4, 5, 62, 5664, 23334, 443])
+// let numbers = [3, 4, 5, 62, 5664, 23334, 443];
+//
+// function reverse(massif) {
+//     let massif2 = [];
+//     for (let i = massif.length - 1; i >= 0; i--) {
+//         for (let j = 0; j < massif.length; j++) {
+//             massif2[j] = massif[i--]
+//         }
+//     }
+//     console.log(massif2)
+// }
+// reverse(numbers)
