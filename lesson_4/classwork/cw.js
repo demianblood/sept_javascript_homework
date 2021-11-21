@@ -27,15 +27,6 @@
 //     return Math.max(...massif)
 // }
 // console.log(numbers([3, 4, 5, 62, 5664, 23334, 443]))
-// function maxNumbers(massif) {
-//     for (let i = 0; i < massif.length; i++) {
-//         let numb = massif[i]
-//         let numbPlus = massif[i++]
-//         let numbMinus = massif[i--]
-//         console.log(numbMinus, numb, numbPlus)
-//     }
-//
-// }
 //
 // maxNumbers([3, 4, 5, 62, 5664, 23334, 443])
 // let massif = [3, 44354, 5, 62, 5664, 23334, 443];
