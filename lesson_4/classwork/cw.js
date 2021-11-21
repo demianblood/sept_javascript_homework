@@ -32,7 +32,7 @@
 // let massif = [3, 44354, 5, 62, 5664, 23334, 443];
 //
 // function maxNumbers(massif) {
-//     let maxValue = 0
+//     let maxValue = massif[0];
 //     for (let i = 0; i < massif.length; i++) {
 //         if (massif[i] > maxValue) {
 //             maxValue = massif[i]
@@ -52,7 +52,7 @@
 // let massif = [3, 44354, 5, 62, 5664, 23334, 443];
 //
 // function minNumbers(massif) {
-//     let minValue = 0;
+//     let minValue = massif[0];
 //     for (let i = 0; i < massif.length; i++) {
 //         if (minValue === 0) {
 //             minValue = massif[i]
@@ -89,10 +89,10 @@
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 // function numbers(number) {
-//     let max = 0;
-//     let min = 0;
+//     let max = number[0];
+//     let min = number[0];
 //     for (let i = 0; i < number.length - 1; i++) {
-//         if (min === 0 || number[i] < min) {
+//         if (number[i] < min) {
 //             min = number[i]
 //         }
 //         if (number[i] > max){
@@ -100,9 +100,10 @@
 //         }
 //     }
 //     console.log(max)
+//     console.log(min)
 //     return min
 // }
-// numbers([31231, 4, 535432, 62, 5664, 23334, 443])
+// numbers([31231, 4, -535432, 62, 5664, 23334, 443])
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
