@@ -45,3 +45,19 @@
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
+// let nullFunction = (array, number) => {
+//     let sum = 0
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === 0) {
+//             array.splice(i, 1);
+//             sum++
+//         }
+//     }
+//     if (sum > 0) {
+//         for (let j = 0; j < sum; j++)
+//             array.push(number)
+//     }
+//
+//     console.log(array)
+// }
+// nullFunction([1, 0, 6, 0, 3, 0, 35, 0, 35, 0, 35, 0, 65], 0)
