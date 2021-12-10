@@ -41,7 +41,7 @@ let body = document.getElementsByTagName("body")[0];
 // Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
 // simpsons.forEach(item => {
 //     let div = document.createElement("div");
-//     div.classList.add('member');
+//     div.classList.add_7('member');
 //     let image = document.createElement('img');
 //     image.src = `${item.photo}`;
 //     image.alt = `${item.name} ${item.surname}`
@@ -55,7 +55,7 @@ let body = document.getElementsByTagName("body")[0];
 //     Проітерувати його, створиши для кожного елементу масиву <div class='member'>. Для кожної властивості елементу створити окремий блок, та помістити його у div.member
 // simpsons.forEach(item => {
 //     let div = document.createElement("div");
-//     div.classList.add('member');
+//     div.classList.add_7('member');
 //     for (let key in item) {
 //         if (key !== 'photo') {
 //             let divElement = document.createElement("div");

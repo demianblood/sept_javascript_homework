@@ -1,10 +1,10 @@
 // // - створити блок,
 // let div = document.createElement('div');
 // //   - додати йому класи wrap, collapse, alpha, beta
-// div.classList.add('wrap')
-// div.classList.add('collapse')
-// div.classList.add('alpha')
-// div.classList.add('beta')
+// div.classList.add_7('wrap')
+// div.classList.add_7('collapse')
+// div.classList.add_7('alpha')
+// div.classList.add_7('beta')
 // // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту\
 // div.style.background = 'blue';
 // div.style.color = 'red';
@@ -77,14 +77,14 @@
 // let body = document.getElementsByTagName('body')[0];
 // coursesAndDurationArray.forEach(item => {
 //     let div = document.createElement('div');
-//     div.classList.add('item');
+//     div.classList.add_7('item');
 //     let h1 = document.createElement('h1')
 //     div.appendChild(h1);
-//     h1.classList.add('heading');
+//     h1.classList.add_7('heading');
 //     h1.innerText = `${item.title}`;
 //     let p = document.createElement('p')
 //     div.appendChild(p);
-//     p.classList.add('description');
+//     p.classList.add_7('description');
 //     p.innerText = `${item.monthDuration}`
 //     body.appendChild(div)
 // })

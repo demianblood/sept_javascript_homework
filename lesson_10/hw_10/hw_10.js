@@ -3,7 +3,7 @@
 // let btn3 = document.getElementById('btn3');
 // let divText = document.getElementById('text')
 // btn1.addEventListener('click', function () {
-//     divText.classList.add('displayNone')
+//     divText.classList.add_7('displayNone')
 // });
 // btn3.addEventListener('click', function () {
 //     divText.classList.remove('displayNone')
@@ -13,7 +13,7 @@
 // let btn2 = document.createElement('button');
 // btn2.innerText = 'delete me'
 // btn2.addEventListener('click', function () {
-//     btn2.classList.add('displayNone')
+//     btn2.classList.add_7('displayNone')
 // });
 // document.body.appendChild(btn2)
 

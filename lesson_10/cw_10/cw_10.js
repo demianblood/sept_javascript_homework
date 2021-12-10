@@ -29,14 +29,14 @@
 //     let cells = inputList.cells;
 //     let contents = inputList.contents;
 //     let table = document.createElement('table');
-//     table.classList.add('table')
+//     table.classList.add_7('table')
 //     for (let i = 0; i < lines.value; i++) {
 //         let line = document.createElement('tr');
-//         line.classList.add('table')
+//         line.classList.add_7('table')
 //         for (let i = 0; i < cells.value; i++) {
 //             let cell = document.createElement('th')
 //             cell.innerText = contents.value
-//             cell.classList.add('table')
+//             cell.classList.add_7('table')
 //             line.appendChild(cell);
 //         }
 //         table.appendChild(line);
