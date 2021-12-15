@@ -7,6 +7,7 @@ let deletElement = (id, massif) => {
         }
     }
 }
+
 for (let good of goods) {
     let pTag = document.createElement('p');
     let imgTag = document.createElement('img');
