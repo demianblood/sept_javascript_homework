@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function goodMorning(isWakeUp = true) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (isWakeUp) {
+                    resolve('Добрий ранок');
+                } else {
+                    reject('проспав')
+                }
+            }, 1000)
+        }))
+    }
+
+    function breakfast(snack) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (snack) {
+                    resolve(`Смачного, як тобі ${snack}?`);
+                } else {
+                    reject('Голодний (-_-)');
+                }
+            }, 1500)
+        }))
+    }
+
+    function coffeeTime(coffee) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (coffee) {
+                    resolve('Кава це все');
+                } else {
+                    reject('потрачено');
+                }
+            }, 200)
+        }))
+    }
+
+    function goWork(bus) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (bus) {
+                    resolve('їдемо на роботу');
+                } else {
+                    reject('пропустив');
+                }
+            }, 1000)
+
+        }))
+    }
+
+    function workTime(work) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (work) {
+                    resolve('Час працювати');
+                } else {
+                    reject('халявщік');
+                }
+            }, 1250)
+        }))
+    }
+
+    function dinnerTime(snack) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (snack) {
+                    resolve('Час обідати');
+                } else {
+                    reject('знову худнемо');
+                }
+            }, 1000)
+        }))
+    }
+
+    function secondWorkTime(work) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (work) {
+                    resolve('Час працювати');
+                } else {
+                    reject('халявщік');
+                }
+            }, 1250)
+        }))
+    }
+
+    function goHome(bus) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (bus) {
+                    resolve('Час додому');
+                } else {
+                    reject('чекай наступного')
+                }
+            }, 1000)
+        }))
+    }
+
+    function isTrafficJams(congestions = false) {
+        return new Promise(((resolve, reject) => {
+            setTimeout(() => {
+                if (congestions) {
+                    resolve('Пробок немає, їдемо далі')
+                } else {
+                    reject('Пробки,ми застрягли')
+                }
+            }, 1000)
+        }))
+    }
+
+    function homeSweatHome(home) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (home) {
+                    resolve('Дім милий дім');
+                } else {
+                    reject("ну погуляємо іще трішки")
+                }
+            }, 1000)
+        })
+    }
+
+    goodMorning(true).then(morning => {
+        console.log(morning);
+        return breakfast('яєчко');
+    }).then(breakfast => {
+        console.log(breakfast);
+        return goWork(true);
+    }).then(finish=>{
+        console.log(finish);
+        return workTime(true);
+    }).then(work=>{
+        console.log(work);
+        return dinnerTime('котлетка');
+    }).then(ate=>{
+        console.log(ate);
+        return secondWorkTime(true);
+    }).then(work =>{
+        console.log(work);
+        return goHome(true);
+    }).then(weGo=>{
+        console.log(weGo);
+        return isTrafficJams(true);
+    }).then(goGoGo =>{
+        console.log(goGoGo);
+        return homeSweatHome(true);
+    }).then(home=>{
+        console.log(home);
+    }).catch(reason => {
+        console.error(reason);
+    })
+
+</script>
+</body>
+</html>
