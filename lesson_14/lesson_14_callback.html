@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function goodMorning(isWakeUp,callback) {
+            setTimeout(() => {
+                if (isWakeUp){
+                    console.log('Good Morning');
+                    callback()
+                }else {
+                    callback('sleep some minute');
+                }
+            }, 1000)
+        }
+    function breakfast(someFood,callback) {
+            setTimeout(() => {
+                if (someFood){
+                    console.log('om nom nom');
+                    callback()
+                }else {
+                    callback('im hungry ')
+                }
+            }, 1500)
+    }
+    function coffeeTime(coffee,callback) {
+            setTimeout(() => {
+                if (coffee){
+                    console.log('MMM coffee');
+                    callback()
+                }else {
+                    callback('where my coffee??????');
+                }
+            }, 200)
+        }
+    function goWork(bus,callback) {
+            setTimeout(() => {
+                if (bus){
+                    console.log('im go');
+                    callback()
+                }else {
+                    callback("im waite")
+                }
+            }, 1000)
+    }
+    function workTime(work,callback) {
+            setTimeout(() => {
+                if (work){
+                    console.log('work work work');
+                    callback();
+                }else {
+                    callback('where i am?');
+                }
+            }, 1250)
+    }
+    function dinnerTime(someFood,callback) {
+            setTimeout(() => {
+                if (someFood){
+                    console.log('om nom nom');
+                    callback();
+                }else {
+                    callback('im hungry')
+                }
+            }, 1000)
+    }
+    function secondWorkTime(work,callback) {
+        setTimeout(() => {
+            if (work){
+                console.log('work work work');
+                callback();
+            }else {
+                callback('where i am?');
+            }
+        }, 1250)
+    }
+    function goHome(bus,callback) {
+            setTimeout(() => {
+                if (bus){
+                    console.log('we go home');
+                    callback()
+                }else{
+                    callback('waite and work');
+                }
+            }, 1000)
+    }
+    function isTrafficJams(trafficJams,callback) {
+            setTimeout(() => {
+                if (!trafficJams){
+                    console.log('yohooooo');
+                    callback();
+                }else {
+                    callback('omg');
+                    callback()
+                }
+
+            }, 1000)
+    }
+    function homeSweatHome(isCameHome,callback) {
+            setTimeout(() => {
+                if (isCameHome){
+                    console.log('home sweet home');
+                    callback();
+                }else {
+                    callback('omg where am i????');
+                }
+            }, 1000)
+    }
+
+goodMorning(true,(err,data)=>{
+    if (err){
+        console.error(err);
+    }else {
+        breakfast(true,(err1,data1)=>{
+            if (err1){
+                console.error(err1);
+            }else {
+                coffeeTime(true,(err2,data2)=>{
+                    if (err2){
+                        console.error(err2);
+                    }else {
+                        goWork(true,(err3,data3)=>{
+                            if (err3){
+                                console.error(err3);
+                            }else {
+                               workTime(true,(err4,data4)=>{
+                                   if (err4){
+                                       console.error(err4);
+                                   }else {
+                                       dinnerTime(true,(err5,data5)=>{
+                                           if (err5){
+                                               console.error(err5);
+                                           }else {
+                                               secondWorkTime(true,(err6,data6)=>{
+                                                   if (err6){
+                                                       console.error(err6);
+                                                   }else {
+                                                       goHome(true,(err7,data7)=>{
+                                                           if (err7){
+                                                               console.error(err7);
+                                                           }else {
+                                                               isTrafficJams(true,(err8,data8)=>{
+                                                                   if (err8){
+                                                                       console.error(err8);
+                                                                   }else {
+                                                                       homeSweatHome(true,(err9,data9)=>{
+                                                                           if (err9) {
+                                                                               console.error(err9);
+                                                                           }
+                                                                       })
+                                                                   }
+                                                               })
+                                                           }
+                                                       })
+                                                   }
+                                               })
+                                           }
+                                       })
+                                   }
+                               })
+                            }
+                        })
+                    }
+                })
+            }
+        })
+    }
+});
+
+</script>
+</body>
+</html>
