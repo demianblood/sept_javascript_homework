@@ -128,21 +128,24 @@
     }
 
     async function dayList() {
-        let sup = 'суп';
-        const morning = await goodMorning(true);
-        const morningBreakfast = await breakfast(sup);
-        const coffeeTimeFirst = await coffeeTime(true);
-        const goWorkFirst = await goWork(true);
-        const firstWorkTime = await workTime(true);
-        const breakDinnerTime = await dinnerTime(sup);
-        const goWorkSecond = await secondWorkTime(true);
-        const roadHome = await goHome(true);
-        const trafficJams = await isTrafficJams(true);
-        const sweatHome = await homeSweatHome(true);
-        console.log(morning, morningBreakfast, coffeeTimeFirst, goWorkFirst,
-            firstWorkTime, breakDinnerTime, goWorkSecond, roadHome, trafficJams, sweatHome)
+        let sup = 'суп'
+        try{
+            const morning = await goodMorning(true);
+            const morningBreakfast = await breakfast(sup);
+            const coffeeTimeFirst = await coffeeTime(true);
+            const goWorkFirst = await goWork(true);
+            const firstWorkTime = await workTime(true);
+            const breakDinnerTime = await dinnerTime(sup);
+            const goWorkSecond = await secondWorkTime(true);
+            const roadHome = await goHome(true);
+            const trafficJams = await isTrafficJams(true);
+            const sweatHome = await homeSweatHome(true);
+            console.log(morning, morningBreakfast, coffeeTimeFirst, goWorkFirst,
+                firstWorkTime, breakDinnerTime, goWorkSecond, roadHome, trafficJams, sweatHome)
+        }catch (error){
+            console.log(error)
+        }
     }
-
     dayList();
 </script>
 </body>
